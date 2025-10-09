@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one"></div>
+
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script src="https://unpkg.com/supersimpledev@8.6.4/dayjs.js"></script>
+
+    <script type="text/babel">
+         let a = "krishna" , shipping_cost = 5;
+         let dollar = 10;
+
+         let cost_of_socks = 10 , cost_of_t_shirt = 8;
+         let total = cost_of_socks+ (2 * cost_of_t_shirt);
+         console.log("The total cost of the production is  : $" + total);
+         console.log(dayjs().format('DD-MM-YYYY'));
+         console.log(dayjs().format('MMMM-DD'));
+    
+   ReactDOM.createRoot(document.querySelector(".one")).render(
+    <>
+   <button>Good job</button>
+   <p>My name is {a}</p>
+   <br/>
+   <p>Cotton solks</p>
+   <p>Price : ${dollar}</p>
+   <button>Add to Cart</button>
+   <br/>
+   <p>The total cost of the purchase is : ${total}</p>
+   <br/>
+   <br/>
+   <p>The prodution Cost : ${total}</p>
+   <p>The Shipping Cost : ${shipping_cost}</p>
+   <p>The Total Cost is : ${total + shipping_cost}</p>
+   <button>Place your Order</button>
+   <br/>
+   <br/>
+   <br/>
+   <p>Todays Date is  : {dayjs().format("DD:MM:YYYY")}</p>
+   <p>The present time is :{dayjs().format("HH:mm:ss")}</p>
+    </> 
+
+   );
+
+
+    </script>
+
+
+</body>
+</html>
